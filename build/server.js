@@ -11,7 +11,7 @@ class Server {
         this.config();
     }
     config() {
-        this.app.set('port', process.env.PORT || 3500);
+        this.app.set('port', process.env.PORT || 5000);
         this.app.use(morgan_1.default('dev')); // Para que muestre las url invocadas
     }
     routes() {
